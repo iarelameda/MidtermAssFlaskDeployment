@@ -34,11 +34,8 @@
 
 Follow these steps to clone and run the project on your local machine:
 
+## 1. Clone the repository
 
-
-### 1. Clone the repository
-
-```bash
 git clone https://github.com/iarelameda/MidtermAssFlaskDeployment.git
 cd MidtermAssFlaskDeployment
 
