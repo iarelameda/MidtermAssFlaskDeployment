@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home - SayItHere{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>Welcome to SayItHere</h1>
+    <p>This is a simple Flask application with dynamic templates, routing, and form handling.</p>
+    <p>Got something to say? SayItHere — quick, easy, and heard.</p>
+    <a href="{{ url_for('feedback') }}" class="btn">Share Your Feedback</a>
+</section>
+
+<section class="features">
+    <div class="feature-box">
+        <h2>✅ Effortless Feedback</h2>
+        <p>No logins, no distractions — just a quick and easy way to share thoughts and suggestions in seconds.</p>
+    </div>
+    <div class="feature-box">
+        <h2>🔒 Anonymous by Design</h2>
+        <p>Encourage honest and open responses with optional anonymous submissions. Privacy builds trust.</p>
+    </div>
+    <div class="feature-box">
+        <h2>📱 Clean & Responsive</h2>
+        <p>Simple, modern interface that works beautifully on any device — desktop, tablet, or mobile.</p>
+    </div>
+</section>
+{% endblock %}

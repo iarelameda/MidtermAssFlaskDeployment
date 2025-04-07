@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block title %}Feedback List - SayItHere{% endblock %}
+
+{% block content %}
+<section class="feedback-list">
+    <h1>Feedback Submissions</h1>
+
+    {% if feedback %}
+        <div class="feedback-grid">
+            {% for item in feedback %}
+            <div class="feedback-card">
+                <h3>{{ item.name }}</h3>
+                <p class="email">{{ item.email }}</p>
+                <p class="message">{{ item.message }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p class="no-feedback">No feedback submissions yet.</p>
+    {% endif %}
+
+    <a href="{{ url_for('feedback') }}" class="btn">Submit Feedback</a>
+</section>
+{% endblock %}
